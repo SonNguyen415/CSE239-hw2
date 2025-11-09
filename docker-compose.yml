@@ -1,0 +1,22 @@
+services:
+  coordinator:
+    build: ./coordinator
+    command: ["python3", "coordinator.py", "https://mattmahoney.net/dc/enwik9.zip"]
+    depends_on:
+      - worker
+    networks:
+      - appnet
+    environment:
+      - SERVICE_NAME=worker
+      - PORT=18861
+
+  worker:
+    build: ./worker
+    networks:
+      - appnet
+    expose:
+      - "18861"
+
+networks:
+  appnet:
+    driver: bridge
