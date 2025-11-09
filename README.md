@@ -1,4 +1,4 @@
-### Advanced Cloud Computing: Homework 2
+# Advanced Cloud Computing: Homework 2
 
 To build with docker:
 ```sh
