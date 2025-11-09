@@ -4,7 +4,7 @@
 
 Download the git repo:
 ```sh
-https://github.com/SonNguyen415/CSE239-hw2.git
+git clone https://github.com/SonNguyen415/CSE239-hw2.git
 ```
 
 To build with docker:
